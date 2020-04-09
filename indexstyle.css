@@ -1,0 +1,206 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body
+{
+  background-image: banner.png;
+  font-family: sans-serif;
+}
+.top-nav-bar
+{
+  height: 60px;
+  top: 0;
+  position: sticky;
+  background: white;
+  margin-bottom: 0px;
+  border-bottom: 3px solid black;
+  z-index: 2;
+}
+.logolb
+{
+  height: 40 px;
+  width: 40 px;
+  margin: 5px 10px;
+}
+.Form-control
+{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 3px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: none;
+    width: 60%;
+}
+input
+{
+  height: 38px;
+}
+.searchicon
+{
+    background: black;
+    border: 3px solid black;
+    margin: 8.5px 10px 3px 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    width: 50px;
+}
+.search
+{
+  display: inline-flex;
+  width: 60%;
+}
+.fa-search
+{
+  margin-left: 5px;
+  margin-top: 8px;
+  color: #fff;
+}
+.menu-bar
+{
+  width: 40%;
+  height: 57px;
+  float: right;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  float: right;
+}
+.menu-bar ul li
+{
+  border-left: 1px solid black;
+  list-style-type: none;
+  padding: 15px 35px;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+.menu-bar ul li a
+{
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+
+}
+@media only screen and (max-width: 980px)
+ {
+    .top-nav-bar
+    {
+      height: 118px;
+      border-bottom: 0px;
+    }
+    .search
+    {
+      width: 100%
+    }
+    .menu-bar
+    {
+      width: 100%;
+    }
+    .menu-bar ul
+    {
+      margin: 10px 0;
+      width: 100%;
+    }
+    .menu-bar ul li
+    {
+      height: 57px;
+      width: 100%
+    }
+ }
+ .pr
+ {
+   text-align: center;
+   font-size: 45px;
+   position: absolute;
+   left: 35%;
+   right: 35%;
+   top: 45%;
+   bottom: 45%;
+   text-shadow: 2px 2px white;
+ }
+.button1
+{
+  font-size: 30px;
+  position: absolute
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  top: 58%;
+  bottom: 35%;
+}
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+.banner{
+  border-bottom: 0px solid lightgray;
+}
+.fotos
+{
+  width: 200px;
+  margin-top: 4%;
+  margin-bottom: 10%
+}
+.titel
+{
+    margin-top: 2%;
+    margin-left: 42%;
+    font-size: 30px;
+}
+.tweede
+{
+  margin-left: 30%;
+  width: 200px;
+  margin-top: 4%;
+  margin-bottom: 5%
+}
+.eerste
+{
+  margin-left: 60%;
+  width: 200px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+.laatste
+{
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 200px;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+.eerstetext
+{
+  margin-left: 60%;
+}
+.tweedetext
+{
+  margin-left: 30%;
+}
+.laatstetext{
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

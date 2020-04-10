@@ -206,21 +206,38 @@ input
 }
 footer {
   background-color: gray;
+}
+.grid
+{
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin-bottom: 0%;
 }
 .uli{
   text-decoration: none;
   color: white;
+  margin-top: 87px;
+  margin-left: 20%;
+  list-style-type: none;
 }
 #topli
 {
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 .uli li a
 {
   text-decoration: none;
   color: white;
+}
+.uli li
+{
+  margin-top: 17px;
+}
+.uli li a:hover
+{
+   color: lightgray;
+}
+#ruimte
+{
+  margin-bottom: 100px;
 }

@@ -91,8 +91,29 @@ input
   text-decoration: none;
 
 }
-@media only screen and (max-width: 980px)
+.pr
+{
+  text-align: center;
+  font-size: 45px;
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  top: 45%;
+  bottom: 45%;
+  text-shadow: 2px 2px white;
+}
+@media only screen and (max-width: 1080px)
  {
+    .pr
+    {
+      right: 20%;
+      left: 30%;
+    }
+    .button1
+    {
+      left: 30%;
+      bottom: 45%;
+    }
     .top-nav-bar
     {
       height: 118px;
@@ -117,17 +138,6 @@ input
       width: 100%
     }
  }
- .pr
- {
-   text-align: center;
-   font-size: 45px;
-   position: absolute;
-   left: 35%;
-   right: 35%;
-   top: 45%;
-   bottom: 45%;
-   text-shadow: 2px 2px white;
- }
 .button1
 {
   font-size: 30px;
@@ -143,7 +153,7 @@ input
   transition-duration: 0.4s;
   position: absolute;
   left: 45%;
-  right: 45%;
+  right: 35%;
   top: 58%;
   bottom: 35%;
 }
@@ -171,7 +181,8 @@ input
   margin-left: 30%;
   width: 200px;
   margin-top: 4%;
-  margin-bottom: 5%
+  margin-bottom: 5%;
+  text-decoration: none;
 }
 .eerste
 {
@@ -179,6 +190,7 @@ input
   width: 200px;
   margin-top: 4%;
   margin-bottom: 5%;
+  text-decoration: none;
 }
 .laatste
 {
@@ -187,18 +199,25 @@ input
   width: 200px;
   margin-top: 4%;
   margin-bottom: 5%;
+  text-decoration: none;
 }
 .eerstetext
 {
   margin-left: 60%;
+  text-decoration: none;
+  color: black;
 }
 .tweedetext
 {
   margin-left: 30%;
+  text-decoration: none;
+  color: black;
 }
 .laatstetext{
   margin-left: 0%;
   margin-right: 0%;
+  text-decoration: none;
+  color: black;
 }
 .grid-container {
   display: grid;
@@ -227,7 +246,7 @@ footer {
   margin-bottom: 30px;
   color: white;
   margin-top: 10px;
-  margin-left: 100px;
+  margin-left: 170px;
 }
 .uli li a
 {

@@ -1,7 +1,11 @@
+*:focus {
+    outline: none;
+}
 *
 {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 body
 {
@@ -35,6 +39,7 @@ body
     border-bottom-right-radius: 0px;
     box-shadow: none;
     width: 60%;
+    padding-left: 20px;
 }
 input
 {
@@ -263,4 +268,7 @@ footer {
 .uli li a:hover
 {
    color: lightgray;
+}
+.price{
+  margin right: 0;
 }

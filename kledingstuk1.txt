@@ -1,2 +1,9 @@
-Long Skirt
-Green
+  <div class="item">
+    <div class="buttons">
+      <span class="delete-btn"></span>
+      <span class="like-btn"></span>
+    </div>
+
+    <div class="image">
+      <img src="kledingstuk1shoppingcart.png" alt="" />
+    </div>

@@ -1,42 +1,42 @@
-const charactersList = document.getElementById('charactersList');
+const itemlist = document.getElementById('itemlist');
 const searchBar = document.getElementById('searchBar');
-let hpCharacters = [];
+let allitems = [];
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
     console.log(searchString);
-    const filteredCharacters = hpCharacters.filter((character) => {
+    const filteredItems = allitems.filter((Item) => {
         return (
-            character.name.toLowerCase().includes(searchString) ||
-            character.gender.toLowerCase().includes(searchString)
+            Item.name.toLowerCase().includes(searchString) ||
+            Item.gender.toLowerCase().includes(searchString)
         );
     });
-    displayCharacters(filteredCharacters);
+    displayItems(filteredItems);
 });
 
-const loadCharacters = async () => {
+const loadItems = async () => {
     try {
-        const res = await fetch('api.txt');
-        hpCharacters = await res.json();
-        displayCharacters(hpCharacters);
+        const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/api.txt');
+        allitems = await res.json();
+        displayItems(allitems);
     } catch (err) {
         console.error(err);
     }
 };
 
-const displayCharacters = (characters) => {
-    const htmlString = characters
-        .map((character) => {
+const displayItems = (Items) => {
+    const htmlString = Items
+        .map((Item) => {
             return `
-            <li class="character">
-                <h2>${character.name}</h2>
-                <p>House: ${character.house}</p>
-                <img src="${character.image}"></img>
+            <li class="Item">
+                <h2>${Item.name}</h2>
+                <p>gender: ${Item.gender}</p>
+                <img src="${Item.image}"></img>
             </li>
         `;
         })
         .join('');
-    charactersList.innerHTML = htmlString;
+    itemlist.innerHTML = htmlString;
 };
 
-loadCharacters();
+loadItems();

@@ -17,14 +17,14 @@ h1 {
     text-align: center;
 }
 
-#charactersList {
+#itemlist {
     padding-inline-start: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 20px;
 }
 
-.character {
+.Item {
     list-style-type: none;
     background-color: #eaeaea;
     border-radius: 3px;
@@ -33,22 +33,22 @@ h1 {
     grid-template-columns: 3fr 1fr;
     grid-template-areas:
         'name image'
-        'house image';
+        'gender image';
     text-align: left;
 }
 
-.character > h2 {
+.Item > h2 {
     grid-area: name;
     margin-bottom: 0px;
 }
 
-.character > p {
-    grid-area: house;
+.Item > p {
+    grid-area: gender;
     margin: 0;
     margin-top: -18px;
 }
 
-.character > img {
+.Item > img {
     max-height: 100px;
     grid-area: image;
 }

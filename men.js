@@ -4,11 +4,11 @@ let hpCharacters = [];
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
-
+    console.log(searchString);
     const filteredCharacters = hpCharacters.filter((character) => {
         return (
             character.name.toLowerCase().includes(searchString) ||
-            character.house.toLowerCase().includes(searchString)
+            character.gender.toLowerCase().includes(searchString)
         );
     });
     displayCharacters(filteredCharacters);
@@ -16,7 +16,7 @@ searchBar.addEventListener('keyup', (e) => {
 
 const loadCharacters = async () => {
     try {
-        const res = await fetch('https://hp-api.herokuapp.com/api/characters');
+        const res = await fetch('api.txt');
         hpCharacters = await res.json();
         displayCharacters(hpCharacters);
     } catch (err) {

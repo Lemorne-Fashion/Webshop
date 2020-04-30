@@ -18,8 +18,6 @@ const loadItems = async () => {
         const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/api.txt');
         allitems = await res.json();
         displayItems(allitems);
-    } catch (err) {
-        console.error(err);
     }
 };
 

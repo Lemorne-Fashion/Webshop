@@ -1,1 +1,1 @@
-[{"name":"shirt with print","gender":"unisex","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk2.png"},{"name":"Oversized hoodie","gender":"unisex","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk3.png"}]
+[{"name":"shirt with print","price":"€8","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk2.png"},{"name":"Oversized hoodie","price":"€20","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk3.png"}]

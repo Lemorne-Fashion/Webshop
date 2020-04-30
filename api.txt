@@ -1,1 +1,1 @@
-[{"name":"Long Green Skirt","gender":"female","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk1.png"},{"name":"shirt with print","gender":"female","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk2.png"}]
+[{"name":"Long Green Skirt","gender":"female","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk1.png"},{"name":"shirt with print","gender":"unisex","image":"https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/kledingstuk2.png"}]

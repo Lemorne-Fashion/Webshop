@@ -1,2 +1,0 @@
-image location / kledingstuk1.png
-recommended size 120x80 px kledingstuk1shoppingcart.png

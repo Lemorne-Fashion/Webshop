@@ -11,22 +11,6 @@
     <title>Lemorne Fashion</title>
   </head>
   <body>
-  <script>
-    localStorage.setItem("Name1", "Long green skirt");
-    localStorage.setItem("Price","€12");
-    localStorage.setItem("Img", "kledingstuk1.png");
-
-    function searching() {
-      var inputt = document.getElementById("search").value;
-      if (inputt == localStorage.getItem("Name1")) {
-        console.log("href kledingstuk 1");
-      }
-      if (inputt == "") {
-        console.log("leeg");
-      }
-    }
-  </script>
-
     <div class="top-nav-bar">
       <div class="search">
         <img src="quilettelogo.png" class="logolb" alt="logo">
@@ -36,7 +20,7 @@
     <div class="menu-bar">
         <ul>
           <li><a href="#">Women</a></li>
-          <li><a href="#">Men</a></li>
+          <li><a href="men.html">Men</a></li>
           <li><a href="#">Unisex</a></li>
           <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
           <li><a href="#"><i class="far fa-heart"></i></a></li>

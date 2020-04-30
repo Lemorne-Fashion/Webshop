@@ -14,11 +14,9 @@ searchBar.addEventListener('keyup', (e) => {
 });
 
 const loadItems = async () => {
-    try {
         const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/api.txt');
         allitems = await res.json();
         displayItems(allitems);
-    }
 };
 
 const displayItems = (Items) => {

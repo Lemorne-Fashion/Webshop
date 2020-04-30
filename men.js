@@ -7,21 +7,16 @@ searchBar.addEventListener('keyup', (e) => {
     console.log(searchString);
     const filteredItems = allitems.filter((Item) => {
         return (
-            Item.name.toLowerCase().includes(searchString) ||
-            Item.gender.toLowerCase().includes(searchString)
+            Item.name.toLowerCase().includes(searchString)
         );
     });
     displayItems(filteredItems);
 });
 
 const loadItems = async () => {
-    try {
-        const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/api.txt');
+        const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/apimen.txt');
         allitems = await res.json();
         displayItems(allitems);
-    } catch (err) {
-        console.error(err);
-    }
 };
 
 const displayItems = (Items) => {

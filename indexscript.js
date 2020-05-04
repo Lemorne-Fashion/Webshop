@@ -8,7 +8,7 @@ const displayItems = (Items) => {
     const htmlString = Items
         .map((Item) => {
             return `
-            <li class="Item">
+            <li class="Item" href= "${Item.name}.html">
                 <h2>${Item.name}</h2>
                 <p>Price: € ${Item.price}</p>
                 <img src="${Item.image}"></img>
@@ -32,3 +32,4 @@ function Searchini() {
 }
 string = document.getElementById('search').value;
 loadItems();
+console.log("hoi")

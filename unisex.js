@@ -25,7 +25,7 @@ const displayItems = (Items) => {
             return `
             <li class="Item">
                 <h2>${Item.name}</h2>
-                <p>Price: ${Item.price}</p>
+                <p>Price: € ${Item.price}</p>
                 <img src="${Item.image}"></img>
             </li>
         `;

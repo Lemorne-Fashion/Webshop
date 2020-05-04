@@ -10,7 +10,7 @@ const displayItems = (Items) => {
             return `
             <li class="Item">
                 <h2>${Item.name}</h2>
-                <p>Price: ${Item.price}</p>
+                <p>Price: € ${Item.price}</p>
                 <img src="${Item.image}"></img>
             </li>
         `;
@@ -18,5 +18,17 @@ const displayItems = (Items) => {
         .join('');
     itemlist.innerHTML = htmlString;
 };
-
+document.body.addEventListener("keydown", function (event) {
+    if (event.keyCode === 13) {
+      string = document.getElementById('search').value;
+      localStorage.setItem("search", string);
+      window.location.replace("search.html");
+    }
+});
+function Searchini() {
+  string = document.getElementById('search').value;
+  localStorage.setItem("search", string);
+  window.location.replace("search.html");
+}
+string = document.getElementById('search').value;
 loadItems();

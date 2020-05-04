@@ -1,20 +1,25 @@
 const itemlist = document.getElementById('itemlist');
 const searchBar = document.getElementById('searchBar');
-let allitems = [];
+searchBar.value = localStorage.getItem("search");
 
+let allitems = [];
 searchBar.addEventListener('keyup', (e) => {
-    const searchString = e.target.value.toLowerCase();
-    console.log(searchString);
-    const filteredItems = allitems.filter((Item) => {
-        return (
-            Item.name.toLowerCase().includes(searchString)
-        );
-    });
-    displayItems(filteredItems);
+    sort();
 });
+function sort() {
+  const searchString = searchBar.value.toLowerCase();
+  console.log(searchString);
+  const filteredItems = allitems.filter((Item) => {
+      return (
+          Item.name.toLowerCase().includes(searchString)
+      );
+  });
+  console.log(filteredItems);
+  displayItems(filteredItems);
+}
 
 const loadItems = async () => {
-        const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/apimen.txt');
+        const res = await fetch('https://raw.githubusercontent.com/Lemorne-Fashion/Webshop/master/api.txt');
         allitems = await res.json();
         displayItems(allitems);
 };
@@ -34,4 +39,8 @@ const displayItems = (Items) => {
     itemlist.innerHTML = htmlString;
 };
 
+document.getElementById('searchBar').focus();
+
 loadItems();
+console.log("hoi");
+sort();

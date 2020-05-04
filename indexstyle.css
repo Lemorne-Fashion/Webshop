@@ -12,6 +12,53 @@ body
   background-image: banner.png;
   font-family: sans-serif;
 }
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#itemlist {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-gap: 20px;
+    margin-top: 2%;
+}
+
+.Item {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'price image';
+    text-align: left;
+}
+
+.Item > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.Item > p {
+    grid-area: price;
+    margin: 0;
+    margin-top: -18px;
+      color: black;
+}
+
+.Item > img {
+    max-height: 100px;
+    grid-area: image;
+}
 .top-nav-bar
 {
   height: 60px;
@@ -27,6 +74,9 @@ body
   height: 40 px;
   width: 40 px;
   margin: 5px 10px;
+}
+#titel{
+  text-align: center;
 }
 .Form-control
 {

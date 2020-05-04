@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="indexscript.js">
-
-    </script>
     <title>Lemorne Fashion</title>
   </head>
   <body>
@@ -18,7 +15,7 @@
       <div class="search">
         <img src="quilettelogo.png" class="logolb" alt="logo" onclick="window.location.href='index.html'">
         <input type="text" class="Form-control" id="search">
-        <span class="searchicon"><i class="fas fa-search" onclick="searching();"></i></span>
+        <span class="searchicon"><i class="fas fa-search" onclick="Searchini();"></i></span>
       </div>
     <div class="menu-bar">
         <ul>
@@ -40,29 +37,28 @@
         <img class="banner"src="banner.png" alt="banner" width="100%">
     </div>
     <section class="nieuwe-collectie" id="New-collection"><br>
-      <p class="titel">New collection!</p><br>
       <div class="container">
-          <h1>All Clothing</h1>
+          <h1 id="titel">New collection</h1>
 
           <ul id="itemlist"></ul>
       </div>
-      <script src="all.js"></script>
     </section>
     <footer>
       <div class="grid">
     <ul class="uli">
       <li class="topli"> Products</li>
-      <li><a href="#New-collection">New collection</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Unisex</a></li>
+      <li><a href="index.html#New-collection">New collection</a></li>
+      <li><a href="woman.html">Women</a></li>
+      <li><a href="men.html">Men</a></li>
+      <li><a href="unisex.html">Unisex</a></li>
       <li class="topli">Contact us</li>
       <li style="margin-left:30px;"><i class="far fa-envelope">&nbsp;Lemorne.fashion@gmail.com</i></li>
       <li style="margin-left:20px;"><a href="https://www.instagram.com/lemornefashion/"><i class="fab fa-instagram"></i> &nbsp;lemornefashion</a></li>
       <li></li>
     </div>
-
-    <div class="grid">
     </footer>
+    <script src="indexscript.js">
+
+    </script>
   </body>
 </html>

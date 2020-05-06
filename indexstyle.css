@@ -163,9 +163,11 @@ input
     {
       right: 20%;
       left: 30%;
+      top: 30%;
     }
     .button1
     {
+      top: 40%;
       left: 30%;
       bottom: 45%;
     }

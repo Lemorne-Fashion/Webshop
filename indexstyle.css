@@ -165,7 +165,7 @@ input
     background-image: url(banner.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     height: 600px;
     width: 100%;
 }

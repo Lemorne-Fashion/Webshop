@@ -1,3 +1,7 @@
+:root {
+  --main-bg-margin: 200;
+  --main-tg-margin: ;
+}
 *:focus {
     outline: none;
 }
@@ -156,6 +160,7 @@ input
 .pr
 {
   text-align: center;
+  padding-top: 10%;
   font-size: 45px;
   text-shadow: 2px 2px white;
 }

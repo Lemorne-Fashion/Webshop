@@ -1,0 +1,17 @@
+body{
+  background-image: url("banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  display: flex;
+  width: 100%
+}
+.button1{
+  position: absolute;
+  top: 65%;
+  width: 10%;
+  height: 6%;
+  align-self: center;
+  font-size: 18px;
+}
